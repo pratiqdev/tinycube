@@ -1,3 +1,12 @@
+/*
+BITO:
+We create a Next.js app instance, which will handle the server-side rendering of our application. 
+We create an HTTP server and set up a request handler to handle incoming requests. 
+We create a WebSocket server and set up a handler to handle incoming WebSocket connections. 
+We set up a SIGTERM signal handler to broadcast a reconnect notification to all connected clients. 
+Finally, we start the server and listen for incoming requests.
+*/
+
 import { createContext } from './context';
 import { appRouter } from './routers/_app';
 import { applyWSSHandler } from '@trpc/server/adapters/ws';
